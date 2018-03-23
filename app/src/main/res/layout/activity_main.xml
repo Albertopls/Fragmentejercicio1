@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.eduardopalacios.fragmentejercicio1.MainActivity">
+
+    <fragment
+        android:name="com.example.eduardopalacios.fragmentejercicio1.FragmentA"
+        tools:layout="@layout/fragment_"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"
+        android:id="@+id/fragmentA"/>
+
+
+
+    <fragment
+        android:name="com.example.eduardopalacios.fragmentejercicio1.FragmentB"
+        tools:layout="@layout/fragment_fragment_b"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/fragmentB"/>
+
+
+
+</LinearLayout>
