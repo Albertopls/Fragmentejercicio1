@@ -60,28 +60,6 @@ public class FragmentA extends Fragment {
 
 
 
-   // @Override
-   // public void onActivityCreated( Bundle savedInstanceState) {
-//        super.onActivityCreated(savedInstanceState);
-
-        //Los elementos se asocian con la actividad o ventana una vez creada
-  //      comunicador= (Comunicador) getActivity();//Asocimos el activity principal con comunicador (uso de polimorfismo)
-    //    valor1=(EditText)getActivity().findViewById(R.id.valor1);
-      //  valor2=(EditText)getActivity().findViewById(R.id.valor2);
-        //sumar=(Button)getActivity().findViewById(R.id.boton);
-        //sumar.setOnClickListener(new View.OnClickListener() {
-          //  @Override
-            //public void onClick(View view) {
-              //  setSumar();
-
-//                comunicador.enviarDatos(resultado);//uso del metodo enviarDatos pero de la actividad NO de la interface
-
-  //          }
-    //    });
-
-
-    //}
-
     public void setSumar()
     {
         int numero1,numero2;
