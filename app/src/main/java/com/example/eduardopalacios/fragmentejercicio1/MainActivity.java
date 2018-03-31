@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity implements Comunicador {
 
         //Haciendo uso de FragmentManager se podran colocar los fragmentos ala actividad
         android.app.FragmentManager fragmentManager=getFragmentManager();
+
+        //R.id.fragmentB corresponde ala etiqueta fragment que se encuentra en activity_main.xml
         FragmentB fragmentB= (FragmentB) fragmentManager.findFragmentById(R.id.fragmentB);
 
         //la variable mensaje contendra el resultado de la suma que se hizo en el fragmentA
