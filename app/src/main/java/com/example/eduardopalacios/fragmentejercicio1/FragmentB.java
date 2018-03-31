@@ -34,6 +34,7 @@ public class FragmentB extends Fragment {
 
     public void colocarResultado(String reultado)
     {
+        //colocamos el rsultado que viene de MainActivity y sera mostrado en este Fragment
         resultado.setText(reultado);
     }
 

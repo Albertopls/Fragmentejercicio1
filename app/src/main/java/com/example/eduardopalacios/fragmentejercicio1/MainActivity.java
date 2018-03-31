@@ -16,8 +16,13 @@ public class MainActivity extends AppCompatActivity implements Comunicador {
     @Override
     public void enviarDatos(String mensaje) {
 
+        //Haciendo uso de FragmentManager se podran colocar los fragmentos ala actividad
         android.app.FragmentManager fragmentManager=getFragmentManager();
         FragmentB fragmentB= (FragmentB) fragmentManager.findFragmentById(R.id.fragmentB);
+
+        //la variable mensaje contendra el resultado de la suma que se hizo en el fragmentA
+        //y por lógica dicho valor viene de FragmentA
+        //el valor de la variable mensaje  debe ser pasado al metodo colocarResultado para que este lo pueda pasar al FragmentB
         fragmentB.colocarResultado(mensaje);
 
 

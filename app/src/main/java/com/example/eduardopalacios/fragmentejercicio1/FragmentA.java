@@ -31,7 +31,13 @@ public class FragmentA extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+        //obtenemos la vista o el layout que corresponde al fragment
+        // obteniendola de la siguiente manera
         vista=inflater.inflate(R.layout.fragment_, container, false);
+
+        // realizamos un cast para poder hacer uso del metodo que se encuentra en Main activity llamado enviarDatos()
+        //el cual corresponde ala interface.(Estudiar el tema de poliformismo para que sea mas entendible esta parte)
         comunicador=(Comunicador)getActivity();
 
         valor1=(EditText)vista.findViewById(R.id.valor1);
@@ -40,7 +46,10 @@ public class FragmentA extends Fragment {
         sumar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //obtenemos el metodo que realizara la operacion.
                 setSumar();
+                //una vez que se hizo la operacion de sumar el valor se almaceno en la variable resultado, posteriormente
+                // pasamos el valor al metodo enviarDatos correspondiente a Main activity para que este a su vez lo pase a FragmentB.
                 comunicador.enviarDatos(resultado);
             }
         });
